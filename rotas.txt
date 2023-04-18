@@ -1,0 +1,71 @@
+APINowe
+
+Server: http://localhost:3308
+
+Users -> 
+    *GET:
+    Response -> 
+        Retorna status 200 
+        Lista todos os usuarios
+
+        status 400
+        Retorna um erro
+
+    *POST
+    Body -> 
+        {
+            "email": "admin@admin2.com",
+            "password": "123456"
+        } 
+    Response ->
+        Retorna status 200 
+        Retorna o usuario registrado
+
+        status 400
+        Retorna um erro
+
+    *PUT 
+        Body -> 
+        {
+            "email": "EDITADO.com",
+            "password": "123456"
+        } 
+    Response ->
+        Retorna status 200 
+        Retorna o id e o email do 
+        usuario atualizado
+
+        status 400
+        Retorna um erro
+        
+    *DELETE
+    Parametros ->
+        id
+        
+    Response -> 
+        Retorna status 200 
+        Retorna null
+
+        status 400
+        Retorna um erro
+
+    *POST
+        Parametros ->
+            id
+    
+        Body -> 
+            {
+            "adm": true,
+            "insert": false,
+            "edit": false,
+            "delet": false,
+            "user_id: 1
+            }
+
+        Response ->
+            Retorna status 200 
+            Retorna a permissão registrada
+
+            status 400
+            Retorna um erro
+        

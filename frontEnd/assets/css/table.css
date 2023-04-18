@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.42em;
+    color:#A7A1AE;
+    background-color:#1F2739;
+}
+
+.post:hover{
+    background-color: rgb(66, 255, 66);
+    color: #fff;
+}
+
+.conteiner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    margin-top: 5% ;
+}
+
+.conteiner h1{
+    margin-bottom: 10%;
+}
+
+.conteiner th{
+    font-size: 20px;
+    padding: 15px;
+    border: 1px solid #fff;
+}
+
+
+.conteiner td{
+    font-size: 15px;
+    padding: 15px;
+    border: 1px solid #fff;
+}
+
+#table tr:hover{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+#delet:hover{
+    background-color: rgb(248, 48, 48);
+    color: #fff;
+}
+#edit:hover{
+    background-color: rgb(234, 243, 101);
+    color: #080808;
+}
